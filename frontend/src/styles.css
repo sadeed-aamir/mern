@@ -1,0 +1,110 @@
+/* src/styles.css */
+
+:root {
+    --primary-color: #6200ea;
+    --background-color-light: #f4f4f4;
+    --background-color-dark: #121212;
+    --text-color-light: #333;
+    --text-color-dark: #ffffff; /* Set to white for dark mode */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--background-color-light);
+    color: var(--text-color-light);
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+.homepage {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    width: 200px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.dark-mode .product-card {
+    background: #333333; /* Darker background for dark mode */
+    color: var(--text-color-dark); /* Text color for dark mode */
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+.dark-mode button {
+    background-color: #bb86fc;
+}
+
+.product-form input,
+.product-form button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 90%;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark-mode .toggle-btn {
+    background-color: #bb86fc;
+    color: #333;
+}

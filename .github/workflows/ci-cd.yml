@@ -1,0 +1,18 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Kubeconfig
+      run: aws eks update-kubeconfig --name my-mern-cluster --region us-east-1
+    - name: Deploy to Kubernetes using Helm
+      run: |
+        helm upgrade --install my-backend ./helm/backend
+        helm upgrade --install my-frontend ./helm/frontend

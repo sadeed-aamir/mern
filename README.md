@@ -1,4 +1,4 @@
-<h1>Abdul Basit (21F-9127) - Sadeed (21F-9198) - Saad (21F-9079)</h1>
+<h2>Abdul Basit (21F-9127) - Sadeed (21F-9198) - Saad (21F-9079)</h2>
 <img src="https://github.com/user-attachments/assets/f9562aa1-9137-4019-a3c4-b67c0c0d2187">
 <img src="https://github.com/user-attachments/assets/4dca3095-43e7-493e-92ae-640e4b32dd5f">
 <img src="https://github.com/user-attachments/assets/9b37d21b-b48a-47b9-b4f9-052c9e86afce">
